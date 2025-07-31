@@ -1,0 +1,49 @@
+.title {
+  font-size: 30px;
+}
+.isi {
+  font-size: 30px;
+}
+@media (max-width: 640px) {
+  .title {
+    font-size: 20px;
+  }
+  .isi {
+    font-size: 20px;
+  }
+  @media (max-width: 480px) {
+    .title {
+      font-size: 15px;
+    }
+    .isi {
+      font-size: 10px;
+    }
+  }
+}
+.test {
+  animation: cari 2s infinite alternate;
+  background-color: tomato;
+}
+.test:hover {
+  background-color: aqua;
+  border: none;
+  padding: 5px;
+  color: brown;
+  left: 40px;
+}
+
+@keyframes cari {
+  0% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translate(900px, 300px);
+    content: "loading";
+    color: red;
+    padding: 30px;
+    background-color: chartreuse;
+  }
+}
